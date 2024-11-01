@@ -3,17 +3,16 @@
 #
 
 # اسم المدونة الذي سيظهر في الأعلى
-name: اسم المدونة
+name: س | المدونة
 
 # وصف قصير للمدونة والذي سيظهر تحت اسمها وكجزء من عنوان المدونة في محركات البحث
-description: مدونة جديدة
+description: هدفنا نشر العلم والمعرفة بين مجتمعاتنا العربية.
 
 # رابط صورة المدونة
 # لإستخدام صورة هويتك في GitHub ضع https://github.com/<اسم_المستخدم>.png في المتغير، مثلا لهويتي الشخصية أستخدم:
 # avatar: https://github.com/a3ammar.png
 # ولإخفاء الصورة نهائيًا احذف الرابط من المتغير
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
-
+avatar: https://raw.githubusercontent.com/Seen-Arabic/blog/master/images/logo.png
 
 #
 # المتغيرات الآتية هي خيارية، عدل عليها إذا أردت تخصيص أكثر للمدونة
@@ -22,34 +21,33 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # لكل هوية تضعها هنا ستظهر أيقونة في أسفل المدونة
 footer-links:
   dribbble:
-  email:
-  facebook:
+  email: SeenDevelopment@gmail.com
+  facebook: Seen.org
   flickr:
-  github: a3ammar/jekyll-now
+  github: Seen-Arabic
   instagram:
-  linkedin:
+  linkedin: company/seen-arabic
   pinterest:
+  telegram: seen_arabic
   rss: # ضع أي قيمة هنا لتظهر أيقونة RSS
-  twitter: jekyllrb
+  twitter: seen_arabic
   stackoverflow: # هويتك في stackoverflow مثلا: "users/50476/bart-kiers"
   youtube: # إما channel/<عنوان_قناتك_الطويل> أو user/<اسم-مستخدمك>
   googleplus: # رقم التعريف عندما تزور هويتك (كل ما يتبع plus.google.com/)
-
 
 # ضع الاسم Disqus القصير الخاص بك (الاسم القصير وليس اسم المستخدم) لتفعيل الردود على المدونة
 # ستجد الاسم القصير الخاص بك في إعدادات حسابك في Disqus
 disqus:
 
 # إذا أردت تفعيل إحصاءات الزوار في Google Analytics أدخل المعرف الخاص بك (مثلاً UA-2110908-2)
-google_analytics:
+google_analytics: G-5ZS6R0YVEF
 
 # عنوان موقعك مثلاً http://barryclark.github.io
 # يستخدم هذا المتغير في الـRSS والـSitemap.xml
-url:
+url: https://seen-arabic.github.io/
 
 # إذا كانت المدونة خاصة للصفحات المشاريع في GitHub (http://yourusername.github.io/repository-name مثلاً) عدل هذا المتغير ليطابق اسم المشروع
-baseurl: ""
-
+baseurl: "https://seen-arabic.github.io/blog"
 
 #
 # هذه المتغيرات خاصة بـJekyll ولا أنصح بتعديلها، لذلك لا حاجة لشرحها

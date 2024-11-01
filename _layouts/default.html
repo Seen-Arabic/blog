@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>
+      {% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}
+    </title>
 
     {% include meta.html %}
 
@@ -9,13 +11,31 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ site.baseurl }}/style.css"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="{{ site.name }} - {{ site.description }}"
+      href="{{ site.baseurl }}/feed.xml"
+    />
 
     <script src="{{ '/javascripts/fontfaceobserver.js' | prepend: site.baseurl }}"></script>
     <script src="{{ '/javascripts/blog.js' | prepend: site.baseurl }}"></script>
 
-    <!-- Created with Arabic Jekyll - http://github.com/a3ammar/arabic-jekyll -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="{{ '/images/logo-circle.svg' | prepend: site.baseurl }}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
 
   <body lang="ar">
@@ -23,30 +43,43 @@
       <div class="container">
         <header class="masthead clearfix">
           {% if site.avatar %}
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          <a href="{{ site.baseurl }}/" class="site-avatar logo no-link-hover"
+            >س</a
+          >
           {% endif %}
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <h1 class="site-name">
+              <a href="{{ site.baseurl }}/" class="no-link-hover"> المدونة </a>
+            </h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
 
           <nav>
             <a href="{{ site.baseurl }}/">المدونة</a>
-            <a href="{{ site.baseurl }}/about">من أنا</a>
+            <a href="{{ site.baseurl }}/about">من نحن</a>
           </nav>
         </header>
       </div>
     </div>
 
-    <div id="main" role="main" class="container {% if page.class %}{{ page.class }}{% endif %}">
+    <div
+      id="main"
+      role="main"
+      class="container {% if page.class %}{{ page.class }}{% endif %}"
+    >
       {{ content }}
     </div>
 
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          {% include svg-icons.html %}
+          <p>للتواصل والاقتراحات</p>
+          <div class="social-links">{% include svg-icons.html %}</div>
+          <a href="{{ site.baseurl }}/privacy-policy"> سياسة الخصوصية </a>
+          <p class="copyright">
+            س - Seen جميع الحقوق محفوظة {{ site.time | date: "%Y" }} &copy;
+          </p>
         </footer>
       </div>
     </div>
