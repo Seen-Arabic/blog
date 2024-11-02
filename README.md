@@ -18,12 +18,11 @@
 لتشغيل المدونة محليًا على جهازك، تأكد من تثبيت **Jekyll** و**Bundler**، ثم قم باتباع الخطوات التالية:
 
 1. **استنساخ المستودع:**
+
    ```bash
    git clone https://github.com/Seen-Arabic/blog.git
    cd blog
    ```
-
-````
 
 2. **تثبيت الاعتماديات:**
 
@@ -68,4 +67,3 @@
 
 **للتواصل معنا:**
 البريد الإلكتروني: [SeenDevelopment@gmail.com](mailto:SeenDevelopment@gmail.com)
-````
