@@ -4,6 +4,7 @@ title: تاريخ الخط العربي منذ ظهور الإسلام
 hijri_date: 29 ربيع الثاني 1446هـ
 author: يوسف محمد
 author_image: /images/authors/youssef-mohamed.jpg
+author_url: https://youssefmo7amed.github.io/portfolio/
 og_image: /images/og/arabic-script-history.jpg
 ---
 

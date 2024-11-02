@@ -7,13 +7,21 @@ layout: default
   <h1>{{ page.title }}</h1>
 
   <div class="date-author">
-    <img
-      src="{{ page.author_image | prepend: site.baseurl | prepend: site.url }}"
-      alt="{{ page.author }}"
-      class="author-image"
-    />
+    <a href="{{ page.author_url }}" target="_blank">
+      <img
+        src="{{ page.author_image | prepend: site.baseurl | prepend: site.url }}"
+        alt="{{ page.author }}"
+        class="author-image"
+      />
+    </a>
     <div class="author-details">
-      <p><strong>بقلم: {{ page.author }}</strong></p>
+      <p>
+        <strong>
+          <a href="{{ page.author_url }}" target="_blank">
+            بقلم: {{ page.author }}</a
+          >
+        </strong>
+      </p>
       <p>
         كُتب في {{ page.date | date: "%Y/%m/%d" }} الموافق {{ page.hijri_date }}
       </p>
