@@ -47,7 +47,7 @@ google_analytics: G-5ZS6R0YVEF
 url: ""
 
 # إذا كانت المدونة خاصة للصفحات المشاريع في GitHub (http://yourusername.github.io/repository-name مثلاً) عدل هذا المتغير ليطابق اسم المشروع
-baseurl: "/blog"
+baseurl: "https://seen-arabic.github.io/blog"
 
 #
 # هذه المتغيرات خاصة بـJekyll ولا أنصح بتعديلها، لذلك لا حاجة لشرحها
