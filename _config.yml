@@ -44,7 +44,7 @@ google_analytics: G-5ZS6R0YVEF
 
 # عنوان موقعك مثلاً http://barryclark.github.io
 # يستخدم هذا المتغير في الـRSS والـSitemap.xml
-url: https://seen-arabic.github.io/
+url: ""
 
 # إذا كانت المدونة خاصة للصفحات المشاريع في GitHub (http://yourusername.github.io/repository-name مثلاً) عدل هذا المتغير ليطابق اسم المشروع
 baseurl: "https://seen-arabic.github.io/blog"
