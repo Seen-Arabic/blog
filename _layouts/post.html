@@ -5,12 +5,10 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
 
-  <div class="entry">
-    {{ content }}
-  </div>
+  <div class="entry">{{ content }}</div>
 
   <div class="date">
-    كُتب في {{ page.date | date: "%d/%m/%Y" }}
+    كُتب في {{ page.date | date: "%Y/%m/%d" }} الموافق {{ page.hijri_date }}
   </div>
 
   {% include disqus.html %}
