@@ -332,10 +332,29 @@ nav {
   transform: rotateY(180deg);
 }
 
-.date {
-  margin-top: 2em;
-  text-align: left;
-  color: $gray;
+.date-author {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: solid 1px lightgray;
+  border-bottom: solid 1px lightgray;
+
+  .author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .author-details {
+    font-size: 16px;
+    flex: 1;
+
+    p {
+      margin: 0px;
+    }
+  }
 }
 
 .wrapper-footer {
