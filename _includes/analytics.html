@@ -8,13 +8,6 @@
 
   ga('create', '{{ site.google_analytics }}', 'auto');
 
-  // Debug mode: log details instead of sending hits
-  ga('set', 'sendHitTask', function(model) {
-  		page: '{{ site.baseurl }}{{ page.url }}',
-  		title: '{{ page.title | replace: "'", "\\'" }}'
-  	});
-  });
-
   ga('send', 'pageview', {
   	'page': '{{ site.baseurl }}{{ page.url }}',
   	'title': '{{ page.title | replace: "'", "\\'" }}'
