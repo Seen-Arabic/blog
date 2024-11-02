@@ -2,12 +2,13 @@
 layout: default
 ---
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <article class="post">
   <h1>{{ page.title }}</h1>
 
   <div class="date-author">
     <img
-      src="{{ page.author_image }}"
+      src="{{ page.author_image | prepend: site.baseurl | prepend: site.url }}"
       alt="{{ page.author }}"
       class="author-image"
     />
@@ -19,7 +20,35 @@ layout: default
     </div>
   </div>
 
+  <div class="share-button">
+    <i class="fas fa-link" onclick="copyLink()"></i>
+  </div>
+
   <div class="entry">{{ content }}</div>
 
   {% include disqus.html %}
 </article>
+
+<script>
+  function copyLink() {
+    const link = window.location.href;
+    navigator.clipboard
+      .writeText(link)
+      .then(() => {
+        Swal.fire({
+          icon: "success",
+          title: "تم النسخ!",
+          text: "تم نسخ رابط المقال بنجاح إلى الحافظة.",
+          confirmButtonText: "حسناً",
+        });
+      })
+      .catch((error) => {
+        Swal.fire({
+          icon: "error",
+          title: "خطأ",
+          text: "حدث خطأ أثناء النسخ. حاول مرة أخرى.",
+          confirmButtonText: "حسناً",
+        });
+      });
+  }
+</script>

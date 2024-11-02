@@ -357,6 +357,21 @@ nav {
   }
 }
 
+.share-button {
+  margin-top: 10px;
+
+  i {
+    font-size: 20px;
+    color: var(--primary);
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  i:hover {
+    color: var(--light-blue);
+  }
+}
+
 .wrapper-footer {
   margin-top: 50px;
   background-color: var(--primary);
