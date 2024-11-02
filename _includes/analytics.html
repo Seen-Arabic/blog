@@ -10,7 +10,6 @@
 
   // Debug mode: log details instead of sending hits
   ga('set', 'sendHitTask', function(model) {
-  	console.log('Google Analytics Debugging - Page View Sent:', {
   		page: '{{ site.baseurl }}{{ page.url }}',
   		title: '{{ page.title | replace: "'", "\\'" }}'
   	});
